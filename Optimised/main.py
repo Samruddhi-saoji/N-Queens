@@ -1,5 +1,6 @@
 #most optimised code
 from copy import deepcopy
+import time #to measure runtime
 
 def NQueens(n: int):
     if n==1 : return [["Q"]]
@@ -66,7 +67,11 @@ def NQueens(n: int):
 
 
 #driver code
-NQueens(5)
+start = time.time()
+NQueens(8)
+end = time.time()
+tot = end - start
+print(tot)
 
 
 
